@@ -27,6 +27,7 @@ class InheritPagePlaceholder(CMSPlugin):
     cmsplugin_ptr = models.OneToOneField(
         to=CMSPlugin,
         parent_link=True,
+        on_delete=models.CASCADE,
         related_name='djangocms_inherit_inheritpageplaceholder',
     )
 
